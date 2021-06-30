@@ -1,10 +1,10 @@
-# Build: $ docker build Dockerfile -t lexxeous/test_docker_app
+# Build: $ docker build -t lexxeous/test_docker_app -f Dockerfile .
 
 FROM python:3.6-alpine
 
 RUN pip install flask
 
-COPY . /opt/
+COPY . /opt
 
 EXPOSE 5000
 
